@@ -50,6 +50,6 @@ I am passionate junior web developer from Ukraine. I love to learn new technolog
 
 > 2007 - 2014 | Tavria State Agrotechnological University | Power Engineer/ Master Degree
 
-### 6. English level
+#### 7. English level
 
 Key English Test - A2
