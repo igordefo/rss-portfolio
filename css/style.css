@@ -4,6 +4,14 @@
 }
 
 @font-face {
+  font-family: 'Neue Helvetica Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url('../fonts/HelveticaNeueCyr-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Neue Helvetica';
   font-style: normal;
   font-weight: 400;
@@ -96,7 +104,56 @@ body {
 .heading {
   display: block;
   padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-bottom: 1.5px solid var(--main);
+}
+
+.link:link,
+.link:visited {
+  letter-spacing: 0.5px;
+  color: #212121;
+}
+
+.range {
+  margin-bottom: 1rem;
+}
+
+.range span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--main);
+}
+
+.range span.empty {
+  border: 1px solid var(--main);
+  background-color: #fff;
+}
+
+/* Sidebar */
+
+.sidebar > *:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.contact {
+  padding-top: 5rem;
+}
+
+.contact__item {
+  margin-bottom: 0.8rem;
+}
+
+.contact__title {
+  margin-bottom: 0.3rem;
+  font-family: 'Neue Helvetica Bold', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.main {
+  padding: 5rem 7rem 0 3rem;
 }
