@@ -24,6 +24,14 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Neue Helvetica', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main);
+}
+
 *,
 *::before,
 *::after {
@@ -64,4 +72,31 @@ html {
 .main {
   grid-column: 5 / -1;
   grid-row: 3 / -1;
+}
+
+.title,
+.subtitle,
+.heading {
+  font-family: 'Neue Helvetica Bold', sans-serif;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.heading {
+  display: block;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid var(--main);
 }
