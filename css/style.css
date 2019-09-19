@@ -46,6 +46,11 @@ body {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -56,6 +61,19 @@ body {
   min-height: 100vh;
   font-size: 1.3rem;
   background-color: #fff;
+}
+
+.picture {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  z-index: 10;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.picture img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
@@ -207,6 +225,7 @@ body {
 }
 
 .courses__item p {
+  letter-spacing: 0.5px;
   margin-right: 0.5rem;
 }
 
