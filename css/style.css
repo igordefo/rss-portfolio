@@ -1,0 +1,67 @@
+:root {
+  --main: #212121;
+  --gray: #f4f4f4;
+}
+
+@font-face {
+  font-family: 'Fiendstar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('../fonts/Fiendstar-W01-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fiendstar Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url('../fonts/Fiendstar-W01-Bold.woff2') format('woff2');
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5rem 16rem 1fr;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 89rem;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  background-color: #fff;
+}
+
+.header {
+  z-index: 1;
+  grid-column: 4 / 9;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid var(--main);
+  background-color: #fff;
+}
+
+.sidebar {
+  padding: 21rem 4rem 0 7rem;
+  grid-column: 1 / 5;
+  grid-row: 1 / -1;
+  background-color: var(--gray);
+}
+
+.main {
+  grid-column: 5 / -1;
+  grid-row: 3 / -1;
+}
