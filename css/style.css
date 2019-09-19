@@ -4,19 +4,19 @@
 }
 
 @font-face {
-  font-family: 'Fiendstar';
+  font-family: 'Neue Helvetica';
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
-  src: url('../fonts/Fiendstar-W01-Regular.woff2') format('woff2');
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Fiendstar Bold';
+  font-family: 'Neue Helvetica Bold';
   font-style: normal;
   font-weight: 700;
   font-display: fallback;
-  src: url('../fonts/Fiendstar-W01-Bold.woff2') format('woff2');
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
 }
 
 html {
