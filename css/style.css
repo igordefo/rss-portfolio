@@ -167,6 +167,10 @@ img {
   background-color: var(--main);
 }
 
+.range span:not(:last-child) {
+  margin-right: 0.3rem;
+}
+
 .range span.empty {
   border: 1px solid var(--main);
   background-color: #fff;
@@ -231,4 +235,62 @@ img {
 
 .udemy-courses a {
   margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding: 21rem 3rem 4rem 2rem;
+  }
+
+  .main {
+    padding: 5rem 2rem 4rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  .header {
+    grid-column: 2 / 12;
+  }
+
+  .sidebar {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .skills {
+    padding-top: 5rem;
+  }
+
+  .sidebar > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .main {
+    grid-row-start: 4;
+    grid-column: 1 / -1;
+    padding: 5rem 1.5rem 4rem 1.5rem;
+  }
+
+  .courses__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .courses__item:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+
+  .links a {
+    margin-top: 1.5rem;
+  }
 }
