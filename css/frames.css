@@ -1,0 +1,39 @@
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.frames button {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.frames button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+button span {
+  visibility: hidden;
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+}
