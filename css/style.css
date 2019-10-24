@@ -63,6 +63,11 @@ img {
   background-color: #fff;
 }
 
+.hide {
+  visibility: hidden;
+  height: 0px;
+}
+
 .picture {
   grid-row: 2/3;
   grid-column: 2/4;
@@ -121,12 +126,19 @@ img {
 }
 
 .heading {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   border-bottom: 2px solid var(--main);
+}
+
+.heading svg {
+  padding-bottom: 1rem;
+  cursor: pointer;
 }
 
 .link::after {
@@ -235,6 +247,53 @@ img {
 
 .udemy-courses a {
   margin-bottom: 0.8rem;
+}
+
+/* Slider */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__item {
+  height: 32rem;
+}
+
+.slider__heading {
+  font-size: 1.6rem;
+  justify-content: center;
+}
+
+.slider__title {
+  justify-content: center;
+}
+
+.slider__list {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style: square;
+}
+
+.slider__list li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.slider button {
+  position: absolute;
+  top: 65%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__prev {
+  left: 0;
+}
+
+.slider__next {
+  right: 0;
 }
 
 @media only screen and (max-width: 768px) {
